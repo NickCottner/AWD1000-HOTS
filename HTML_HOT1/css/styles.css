@@ -1,0 +1,49 @@
+header
+{
+    background: cornflowerblue;
+    color: black;
+    text-align: center;
+    padding: 30px 10px;
+}
+a:link{
+    color: wheat;
+}
+a:hover{
+    color: chartreuse;
+}
+#container{
+    width: 60em;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid black;
+    
+}
+Main{
+    background-image: url("../images/pizza.jfif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+   
+}
+#menu{
+    background-color: black;
+    color:white;
+}
+#map    
+{
+    background-color: black;
+    text-align: center;
+}
+footer{
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
