@@ -1,0 +1,73 @@
+#container{
+    border: 4px solid black;
+    max-width: 1500px;
+}
+.header{
+    background: linear-gradient(to right, navy, orange );
+    margin-top: -1.4rem;
+    color: white;
+    border-bottom: 4px solid dodgerblue;
+}
+.header h1{
+    text-align: center;
+}
+ul.navBar{
+    background: gray;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    
+}
+ul.navBar li{
+    width: 50rem;
+    display: inline;
+    margin: 5.5rem;
+    
+}
+ul.navBar li :hover{
+    background: purple;
+}
+ul.navBar li :focus{
+    color: white;
+}
+ul.navBar li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+ul.navBar li a.current{
+    color: navy;
+}
+.main{
+background-image: url("../images/savathun.jpg");
+background-size: 100%;
+margin-top: -1.35rem;
+color: white;
+text-shadow: 1px 2px orange;
+text-align: center;
+}
+.column {
+    float: left;
+    max-width: 300px;
+    margin: .5rem;
+    border: 1px solid black;
+  }
+  .span {
+      display: block;
+  }
+  .row{
+      background: white;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer{
+    background:navy;
+    color: white;
+    text-align: center;
+    border-top: 4px solid dodgerblue;
+    margin-bottom: -1rem;
+  }
