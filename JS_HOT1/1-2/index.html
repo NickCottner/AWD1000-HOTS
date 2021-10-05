@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1-4 Odd Numbers</title>
+
+</head>
+<body>
+    <main>
+        <h1>Age Verification</h1>
+        <script>
+            const MINAGE = 1;
+            const MAXAGE = 200;
+            let html;
+            let ofAge = "Welcome To The Venue!";
+            let underAge = "You Are Not Old Enough!";
+            let integer = "Please Enter Your Age!";
+            let outOfRange = "Age Out Of Range!"
+            let question;
+
+            do
+            {
+                do
+                {
+                    let age = (prompt("Please Enter Your Age"));
+
+                    if((isNaN(age)))
+                    {
+                        let html = integer;
+                        document.write(`${age} = ${html} <br>`)
+                    }
+                    else if ((age < MINAGE) || (age > MAXAGE))
+                    {
+                        let html = outOfRange;
+                        document.write(`${age} = ${html} <br>`)
+                    }
+                    else if(age >= 21)
+                    {
+                        let html = ofAge;
+                        document.write(`${age} = ${html} <br>`)
+                    }
+                    else if(age < 21)
+                    {
+                        let html = underAge;
+                        document.write(`${age} = ${html} <br>`)
+                    }
+                    break;
+                    
+                }
+                while(true)
+                {
+                    let question = prompt("Enter Another Age? (y/n)", "y")
+                    if(question === "y")
+                    {
+                        continue
+                    }
+                    else
+                    {
+                        alert("You Have Chosen To Stop Inputting Ages.\nClick Ok To View Results.")
+                        break;
+                    }
+                }
+            }
+            while(true);
+            </script>
+            </main>
+        </body>
+        </html>

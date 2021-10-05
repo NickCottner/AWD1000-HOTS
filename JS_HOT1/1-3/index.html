@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1-4 Odd Numbers</title>
+
+</head>
+<body>
+    <main>
+        <h1>Song Lyrics</h1>
+        <script>
+            const MINNUM = 1;
+            const MAXNUM = 3;
+            let html;
+            let FS = "One is the lonliest number.";
+            let SS = "Two can be as bad as one. It's the lonliest since the number 1.";
+            let TS = "There is no three.";
+            let question;
+
+            do
+            {
+                do
+                {
+                    let songNumber = parseInt(prompt("Please Enter A Number From 1 to 3"));
+
+                    if((isNaN(songNumber)))
+                    {
+                        alert(`You Entered a String, Please Enter a Number Not A Word`);
+                    }
+                    if ((songNumber < MINNUM) || (songNumber > MAXNUM))
+                    {
+                        alert(`You Entered ${songNumber}, You Didn't Enter A Valid Number`)
+                    }
+                    else if(songNumber === 1)
+                    {
+                        let html = FS;
+                        document.write(html + "<br>");
+                    }
+                    else if(songNumber === 2)
+                    {
+                        let html = SS;
+                        document.write(html + "<br>"); 
+                    }
+                    else if(songNumber === 3)
+                    {
+                        let html = TS;
+                        document.write(html + "<br>");
+                    }
+                    break;
+                    
+                }
+                while(true)
+                {
+                    let question = prompt("Add Another Lyric? (y/n)", "y")
+                    if(question === "y")
+                    {
+                        continue
+                    }
+                    else
+                    {
+                        alert("You Have Chosen To Stop Inputting Numbers\nClick Ok To View Results.")
+                        break;
+                    }
+                }
+            }
+            while(true);
+            </script>
+            </main>
+        </body>
+        </html>
