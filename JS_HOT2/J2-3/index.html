@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width-device=width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<title>Upvote/Downvote</title>
+		<script src="js/scripts.js"></script>
+	</head>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">Console Upvote/Downvote</h3>
+		<hr style="border-top:1px dotted #000;"/>
+		<table class="table table-bordered">
+			<thead class="alert-info">
+				<tr>
+					<th>Console</th>
+					<th>Action</th>
+					<th>Vote Count</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<div>
+					<tr ng-repeat="member in members">
+					<td>Playstation</td>
+					<td><button class="btn btn-primary btn-sm" ng-click= "incrementUp(member)"><span class="glyphicon glyphicon-arrow-up"></span><img src="images/thumbs-up.png"></button>&nbsp;&nbsp;<button class="btn btn-danger btn-sm" ng-click= "incrementDown(member)"><span class="glyphicon glyphicon-arrow-down"></span><img src="images/thumgs-down.png"></button></td>
+					</div>
+				</tr>
+
+				<tr>
+					<div>
+					<td>Xbox</td>
+					<td><button class="btn btn-primary btn-sm" ng-click= "incrementUp(member)"><span class="glyphicon glyphicon-arrow-up"></span><img src="images/thumbs-up.png"></button>&nbsp;&nbsp;<button class="btn btn-danger btn-sm" ng-click= "incrementDown(member)"><span class="glyphicon glyphicon-arrow-down"></span><img src="images/thumgs-down.png"></button></td>
+					</div>
+				</tr>
+
+				<tr>
+				<div>
+					<td>PC</td>
+					<td><button class="btn btn-primary btn-sm" ng-click= "incrementUp(member)"><span class="glyphicon glyphicon-arrow-up"></span><img src="images/thumbs-up.png"></button>&nbsp;&nbsp;<button class="btn btn-danger btn-sm" ng-click= "incrementDown(member)"><span class="glyphicon glyphicon-arrow-down"></span><img src="images/thumgs-down.png"></button></td>
+				</div>	
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>		
+</html>
